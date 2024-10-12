@@ -1,0 +1,60 @@
+/* CUSTOM FONT: REGULAR */
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url(./fonts/SourceSansPro-Regular.otf) format("opentype");
+}
+
+/* CUSTOM FONT: SEMIBOLD */
+@font-face {
+    font-family: 'Source Sans Pro Semibold';
+    src: url(./fonts/SourceSansPro-Semibold.otf) format("opentype");
+}
+
+/* GLOBAL STYLES */
+
+/* HEADER STYLES (TASK 1) */
+
+/* BODY STYLES (TASK 2) */
+.body {
+    background-color: #FFF;
+    color: #071629;
+}
+
+/* BODY HEADER */
+.body-header {
+    font-family: 'Source Sans Pro Semibold';
+    font-size: 32px;
+    text-align: center;
+}
+
+/* BODY DESCRIPTION */
+.body-desc {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 16px;
+    text-align: center;
+}
+
+/* BODY BLOCK CONTAINER */
+.body-block-container {
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+}
+
+.body-block-title {
+    font-family: 'Source Sans Pro Semibold';
+    font-size: 18px;
+    text-align: center;
+}
+
+.body-block-description {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 14px;
+    text-align: center;
+}
+
+/* RESULTS STYLES (TASK 3) */
+
+/* CONTACT US STYLES (TASK 4) */
+
+/* FOOTER STYLES (TASK 5) */
