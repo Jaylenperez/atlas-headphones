@@ -10,21 +10,92 @@
     src: url(./fonts/SourceSansPro-Semibold.otf) format("opentype");
 }
 
+/* CUSTOM FONT: BOLD */
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url(./fonts/SourceSansPro-Bold.otf) format("opentype");
+}
+
 /* GLOBAL STYLES */
+body {}
 
 /* HEADER STYLES (TASK 1) */
-header {}
+header {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-.header-top {}
+/* LOGO & NAV-MENU CONTAINER */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    flex-shrink: 0;
+}
 
-.logo {}
+/* LOGO POSITION */
+.logo {
+    position: relative;
+}
 
-.nav-menu
+/* LOGO IMAGE STYLES */
+.logo img {
+    width: 161px;
+    height: 32px;
+}
 
-/* WHAT WE DO, OUR RESULTS, AND CONTACT US */
+/* NAV MENU CONTAINER */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
 
+.nav-menu a {
+    font-family: 'Source Sans Pro Bold';
+}
 
-.header-content
+.header-bottom {
+    text-align: center;
+    color: #FFF;
+}
+
+.header-bottom h1 {
+    font-family: 'Source Sans Pro Bold';
+    font-size: 32px;
+}
+
+.header-bottom h2 {
+    font-family: 'Source Sans Pro Bold';
+    font-size: 16px;
+}
+
+.header-bottom button {
+    font-family: 'Source Sans Pro Bold';
+    font-size: 14px;
+    padding: 15px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #FF6565;
+    color: #ffffff;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 30px;
+    border: 0;
+    box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.50);
+}
+
+.header-bottom p {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 16px;
+}
 
 /* BODY STYLES (TASK 2) */
 .body {
