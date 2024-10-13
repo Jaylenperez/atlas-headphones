@@ -140,17 +140,24 @@ header {
 
 /* CONTACT US STYLES (TASK 4) */
 .contact {
-    text-align: center;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    border: 1px solid #000;
+    height: 533px;
+    width: 379px;
+
 }
 
 .contact-header {
-    font-family: 'Source Sans Pro Semibold';
-    font-size: 32px;
+    text-align: center;
 }
 
-.contact-info {
-    font-family: 'Source Sans Pro Semibold';
-    font-size: 14px;
+.contact-form {
+    text-align: center;
 }
 
 .contact-button {
