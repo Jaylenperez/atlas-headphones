@@ -16,6 +16,15 @@
     src: url(./fonts/SourceSansPro-Bold.otf) format("opentype");
 }
 
+/* CUSTOM GLIPH FONT */
+@font-face {
+    font-family: 'Gliph';
+    src: url('./gliph/._holberton_school-icon.woff') format('woff'),
+         url(./gliph/._holberton_school.icon.eot) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* HEADER STYLES (TASK 1) */
 header {
     background-image: url("images/headphones_hero_1.jpg");
@@ -29,12 +38,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 32px;
+    padding: 0px 32px;
 }
 
 .logo-container {
     width: 161px;
     height: auto;
+    margin-left: 150px;
 }
 /* LOGO */
 .logo {
@@ -46,12 +56,13 @@ header {
 .nav-container {
     display: flex;
     align-items: center;
+    margin-right: 150px;
 }
 
 /* NAVIGATION LIST STYLING */
 .nav-menu {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 40px; /* Space between links */
     font-weight: bold;
     list-style-type: none;
 }
@@ -66,7 +77,7 @@ header {
 
 /* HEADER MAIN CONTENT */
 .header-bottom {
-    padding-top: 245px;
+    padding-top: 220px;
     text-align: center;
     color: #FFF;
     display: flex;
@@ -78,7 +89,7 @@ header {
 .header-bottom h1 {
     font-family: 'Source Sans Pro Bold';
     font-size: 32px;
-    margin-bottom: -6px;
+    margin-bottom: 2px;
 }
 
 /* HEADER SUBTITLE */
@@ -91,20 +102,25 @@ header {
 /* HEADER BUTTON */
 .header-bottom button {
     font-family: 'Source Sans Pro Bold';
-    font-size: 14px;
-    padding: 15px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 25px;
-    background-color: #FF6565;
     color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 13px 31px;
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
     display: block;
     margin-left: auto; 
     margin-right: auto;
     margin-top: 30px;
     border: 0;
     box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.50);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* HEADER DESCRIPTION */
@@ -112,6 +128,7 @@ header {
     font-family: 'Source Sans Pro Regular';
     font-size: 16px;
     margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 /* BODY STYLES (TASK 2) */
