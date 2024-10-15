@@ -34,7 +34,7 @@ header {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    width: 100%; /* ok small issue: header cannot take up whole width. fix this */
+    width: 100%;
 }
 
 /* LOGO AND NAV CONTAINER */
@@ -42,11 +42,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 32px;
     position: relative;
+    margin: 0 auto;
+    padding: 0px 32px;
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -71,10 +71,10 @@ header {
 
 /* NAVIGATION LIST STYLING */
 .nav-menu {
-    display: flex;
-    gap: 40px;
     font-weight: bold;
+    display: flex;
     list-style-type: none;
+    gap: 40px;
 }
 
 /* WHAT WE DO, OUR RESULTS, AND CONTACT US */
@@ -172,6 +172,8 @@ header {
 .body-header {
     font-family: 'Source Sans Pro Semibold';
     font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
     text-align: center;
     margin-top: 110px;
     margin-bottom: 40px;
@@ -182,53 +184,65 @@ header {
     font-family: 'Source Sans Pro Regular';
     font-size: 16px;
     text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
     margin-bottom: 111px;
 }
 
 /* BODY BLOCK CONTAINER */
-.body-block-container {
+.card-container {
     display: flex;
     gap: 58px;
     justify-content: center;
     margin-bottom: 110px;
 }
 
-.body-block-title {
+.card-title {
     font-family: 'Source Sans Pro Semibold';
     font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 13px;
 }
 
-.body-block-description {
+.card-description {
     font-family: 'Source Sans Pro Regular';
     font-size: 14px;
     text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 /* RESULTS STYLES (TASK 3) */
 
 /* CONTACT US STYLES (TASK 4) */
 .contact {
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    width: 100%; /* Full width */
+    max-width: 100%;
 }
 
 /* CONTACT CONTAINER */
 .contact-container {
+    margin: 0 auto;
     max-width: 400px;
     width: 100%;
-    margin: 0 auto;
 }
 
 /* CONTACT HEADER */
 .contact-header {
     font-family: 'Source Sans Pro Semibold';
-    font-size: 32px;
     text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
     margin-bottom: 56px;
     margin-top: 110px;
 }
@@ -236,8 +250,8 @@ header {
 /* CONTACT FORM FIELDS */
 .contact-form-fields {
     display: flex;
-    flex-wrap: wrap;
-    gap: 45px;
+    flex-wrap: wrap; /* allow items to wrap to next line */
+    gap: 45px; /* space between items */
     justify-content: center;
 }
 
@@ -245,14 +259,14 @@ header {
 .name-container,
 .email-container,
 .message-container {
-    margin-bottom: 30px;
     font-family: 'Source Sans Pro Semibold';
-    font-size: 14px;
     color: #071629;
-    position: relative;
-    width: 335px;
-    height: 28px;
+    position: relative; /* set position for pseudo elements */
+    font-size: 14px;
     font-weight: 600;
+    width: 335px; /* set width for form fields */
+    height: 28px; /* set height for form fields */
+    margin-bottom: 30px;
 }
 
 /* LINE AFTER EACH FORM FIELD */
@@ -260,11 +274,11 @@ header {
 .email-container::after,
 .message-container::after {
     content: '';
-    position: absolute;
+    position: absolute; /* position relative to container */
     bottom: -1px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    transform: translateX(-50%); /* adjust position to align perfectly */
+    width: 100%; /* line takes up full width of container */
     height: 1px;
     background-color: #071629;
     opacity: 0.1745;
@@ -293,5 +307,6 @@ header {
     width: 162px;
     height: 44px;
     text-align: center;
+    margin-bottom: 130px;
 }
 /* FOOTER STYLES (TASK 5) */
