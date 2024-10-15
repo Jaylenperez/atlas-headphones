@@ -181,7 +181,6 @@ header {
 
 /* CONTACT CONTAINER */
 .contact-container {
-    border: 1px solid #000;
     height: 533px;
     width: 379px;
 }
@@ -198,7 +197,7 @@ header {
 .contact-form-fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 56px;
+    gap: 45px;
     justify-content: center;
 }
 
@@ -206,11 +205,13 @@ header {
 .name-container,
 .email-container,
 .message-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Source Sans Pro Semibold';
     font-size: 14px;
     color: #071629;
     position: relative;
+    width: 335px;
+    height: 28px;
 }
 
 /* LINE AFTER EACH FORM FIELD */
@@ -219,31 +220,17 @@ header {
 .message-container::after {
     content: '';
     position: absolute;
-    bottom: 10px;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    width: 335px;
+    width: 100%;
     height: 1px;
     background-color: #071629;
     opacity: 0.1745;
 }
 
-/* NAME FIELD */
-.name-container {
-    width: 335px;
-    height: 28px;
-}
-
-/* EMAIL FIELD */
-.email-container {
-    width: 335px;
-    height: 28px;
-}
-
 /* YOUR MESSAGE FIELD */
 .message-container {
-    width: 335px;
-    height: 28px;
     margin-bottom: 57px;
 }
 
@@ -251,7 +238,7 @@ header {
 .contact-button {
     font-family: 'Source Sans Pro Bold';
     font-size: 14px;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 25px;
@@ -262,6 +249,8 @@ header {
     margin-right: auto;
     margin-top: 30px;
     border: 0;
-    box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.50);
+    width: 162px;
+    height: 44px;
+    text-align: center;
 }
 /* FOOTER STYLES (TASK 5) */
