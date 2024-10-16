@@ -40,4 +40,4 @@ the objective is simple: Have a fully functional web page that looks the same as
 - Github: [@Jaylenperez](https://github.com/Jaylenperez)
 
 **Jacob Griffith**
-- Github: [@username](https://github.com/JacobGriffith1)
+- Github: [@JacobGriffith1](https://github.com/JacobGriffith1)
