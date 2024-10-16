@@ -9,6 +9,7 @@
 
     <!-- Import the Style -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./glyph/style.css">
 </head>
 <body>
     <!-- Header Section (TASK 1) -->
@@ -56,57 +57,104 @@
                 <h1 class="body-header">What we do...</h1>
                 <p class="body-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in<br>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <!-- Body Blocks -->
-                <div class="card-container">
-                    <!-- Volume Up Block -->
-                    <div class="card">
-                        <h2 class="card-title">Lorem ipsum</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                <div class="block-zone">
+                    <div class="block-cont">
+                        <!-- Volume Up Block -->
+                        <div class="block">
+                            <p class="holberton_school-icon-ic_sound glyph glyph-sound"></p>
+                            <h2 class="body-block-title">Lorem ipsum</h2>
+                            <p class="body-block-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                        </div>
+                        <!-- Video Block -->
+                        <div class="block">
+                            <p class="holberton_school-icon-ic_video glyph glyph-video"></p>
+                            <h2 class="body-block-title">Lorem ipsum</h2>
+                            <p class="body-block-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                    <!-- Video Block -->
-                    <div class="card">
-                        <h2 class="card-title">Lorem ipsum</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
-                    </div>
-                    <!-- Music Block -->
-                    <div class="card">
-                        <h2 class="card-title">Lorem ipsum</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
-                    </div>
-                    <!-- Ear Block -->
-                    <div class="card">
-                        <h2 class="card-title">Lorem ipsum</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                    <div class="block-cont">
+                        <!-- Music Block -->
+                        <div class="block">
+                            <p class="holberton_school-icon-ic_music glyph glyph-music"></p>
+                            <h2 class="body-block-title">Lorem ipsum</h2>
+                            <p class="body-block-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                        </div>
+                        <!-- Ear Block -->
+                        <div class="block">
+                            <p class="holberton_school-icon-ic_hearing glyph glyph-hearing"></p>
+                            <h2 class="body-block-title">Lorem ipsum</h2>
+                            <p class="body-block-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+                        </div>
                     </div>
                 </div>
             </div>            
         </section>
 
-        <!-- Results Section (TASK 3) -->
-        <section id="results"></section>
-
-        <!-- Contact Section (TASK 4) -->
-        <section id="contact">
-            <!-- Contact Block Container -->
-            <div class="contact-container">
-                <!-- Contact Header -->
-                <div class="contact-header">
-                    <h2>Contact us</h2>
+    <!-- Results Section -->
+    <section id="results">
+        <div class="results-cont">
+            <h1 class="results-header">Our results speak for themselves</h1>
+            <p class="results-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="pentagon-zone">
+                <div class="pentagon-cont">
+                    <div class="pentagon">
+                        <p class="pentagon-header">+2%</p>
+                        <p class="pentagon-desc">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="pentagon">
+                        <p class="pentagon-header">+2%</p>
+                        <p class="pentagon-desc">Lorem ipsum dolor</p>
+                    </div>
                 </div>
-                <!-- Contact Form -->
-                <div class="contact-form-fields">
-                    <div class="name-container">Name</div>
-                    <div class="email-container">Email</div>
-                    <div class="message-container">Your message</div>
+                <div class="pentagon-cont">
+                    <div class="pentagon">
+                        <p class="pentagon-header">+2%</p>
+                        <p class="pentagon-desc">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="pentagon">
+                        <p class="pentagon-header">+2%</p>
+                        <p class="pentagon-desc">Lorem ipsum dolor</p>
+                    </div>
                 </div>
-                <!-- Contact Button -->
-                <button class="contact-button">
-                    <span>CALL TO ACTION</span>
-                </button>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-<!-- Footer Section (TASK 5) -->
-<footer></footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <!-- Contact Block Container -->
+        <div class="contact-container">
+            <!-- Contact Header -->
+            <div class="contact-header">
+                <h4>Contact us</h4>
+            </div>
+            <!-- Contact Form -->
+             <div class="contact-form-fields">
+                <div class="name-container">Name</div>
+                <div class="email-container">Email</div>
+                <div class="message-container">Your message</div>
+             </div>
+            <!-- Contact Button -->
+            <button class="contact-button">
+                <span>CALL TO ACTION</span>
+            </button>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <section class="footer-cont">
+        <div class="footer-important">
+            <div class="footer-logo"></div>
+            <div class="social-cont">
+                <div class="holberton_school-icon-ic_facebook social"></div>
+                <div class="holberton_school-icon-ic_twitter social"></div>
+                <div class="holberton_school-icon-ic_instagram social"></div>
+            </div>
+        </div>
+        <p class="copyright">©headphones 2020</p>
+    </section>
+</footer>
 </body>
 </html>
