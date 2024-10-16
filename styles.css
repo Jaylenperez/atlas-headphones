@@ -16,13 +16,9 @@
     src: url(./fonts/SourceSansPro-Bold.otf) format("opentype");
 }
 
-/* CUSTOM GLIPH FONT */
-@font-face {
-    font-family: 'Gliph';
-    src: url('./gliph/._holberton_school-icon.woff') format('woff'),
-         url(./gliph/._holberton_school.icon.eot) format('opentype');
-    font-weight: normal;
-    font-style: normal;
+/* Body Margin Snipe */
+body {
+    margin: 0%;
 }
 
 /* HEADER STYLES (TASK 1) */
@@ -34,7 +30,7 @@ header {
     background-repeat: no-repeat;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* ok small issue: header cannot take up whole width. fix this */
 }
 
 /* LOGO AND NAV CONTAINER */
@@ -42,11 +38,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin: 0 auto;
     padding: 0px 32px;
+    position: relative;
     width: 80%;
     max-width: 1200px;
+    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -71,10 +67,10 @@ header {
 
 /* NAVIGATION LIST STYLING */
 .nav-menu {
-    font-weight: bold;
     display: flex;
-    list-style-type: none;
     gap: 40px;
+    font-weight: bold;
+    list-style-type: none;
 }
 
 /* WHAT WE DO, OUR RESULTS, AND CONTACT US */
@@ -166,83 +162,174 @@ header {
 .body {
     background-color: #FFF;
     color: #071629;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
-/* BODY HEADER */
 .body-header {
     font-family: 'Source Sans Pro Semibold';
     font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
     text-align: center;
     margin-top: 110px;
     margin-bottom: 40px;
 }
 
-/* BODY DESCRIPTION */
 .body-desc {
     font-family: 'Source Sans Pro Regular';
     font-size: 16px;
     text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
     margin-bottom: 111px;
 }
 
-/* BODY BLOCK CONTAINER */
-.card-container {
+.block-zone {
+    position: relative;
     display: flex;
-    gap: 58px;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 58px;
     margin-bottom: 110px;
 }
 
-.card-title {
+.block-cont {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+}
+
+.block {
+    width: 207px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.body-block-title {
     font-family: 'Source Sans Pro Semibold';
     font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 13px;
 }
 
-.card-description {
+.body-block-description {
     font-family: 'Source Sans Pro Regular';
     font-size: 14px;
     text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+}
+
+.glyph {
+    color: #FF6565;
+    margin: 0%;
+    text-align: center;
+    scale: 600%;
+    margin-bottom: 25.2px;
 }
 
 /* RESULTS STYLES (TASK 3) */
 
+.results-cont {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: #FFFFFF;
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.results-header {
+    font-family: 'Source Sans Pro Semibold';
+    font-size: 32px;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+
+.results-desc {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 111px;
+    max-width: 637px;
+    min-width: 208px;
+    height: 104px;
+}
+
+.pentagon-zone {
+    position: relative;
+    top: -56px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 76px;
+    justify-content: center;
+    margin-bottom: 79px;
+}
+
+.pentagon-cont {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+    gap: 76px;
+}
+
+.pentagon {
+    background-image: url(./images/pentagone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pentagon-header {
+    position: relative;
+    top: 20px;
+    font-family: 'Source Sans Pro Bold';
+    font-size: 46px;
+    max-width: 89px;
+    line-height: 26px;
+}
+
+.pentagon-desc {
+    position: relative;
+    bottom: 20px;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    max-width: 111px;
+    line-height: 26px;
+}
+
 /* CONTACT US STYLES (TASK 4) */
 .contact {
-    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Full width */
-    max-width: 100%;
+    background-color: #FFFFFF;
 }
 
 /* CONTACT CONTAINER */
 .contact-container {
-    margin: 0 auto;
+    position: relative;
+    top: 55px;
     max-width: 400px;
     width: 100%;
+    margin-bottom: 130px;
 }
 
 /* CONTACT HEADER */
 .contact-header {
     font-family: 'Source Sans Pro Semibold';
-    text-align: center;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
+    text-align: center;
     margin-bottom: 56px;
     margin-top: 110px;
 }
@@ -250,8 +337,8 @@ header {
 /* CONTACT FORM FIELDS */
 .contact-form-fields {
     display: flex;
-    flex-wrap: wrap; /* allow items to wrap to next line */
-    gap: 45px; /* space between items */
+    flex-wrap: wrap;
+    gap: 45px;
     justify-content: center;
 }
 
@@ -259,14 +346,14 @@ header {
 .name-container,
 .email-container,
 .message-container {
-    font-family: 'Source Sans Pro Semibold';
-    color: #071629;
-    position: relative; /* set position for pseudo elements */
-    font-size: 14px;
-    font-weight: 600;
-    width: 335px; /* set width for form fields */
-    height: 28px; /* set height for form fields */
     margin-bottom: 30px;
+    font-family: 'Source Sans Pro Semibold';
+    font-size: 14px;
+    color: #071629;
+    position: relative;
+    width: 335px;
+    height: 28px;
+    font-weight: 600;
 }
 
 /* LINE AFTER EACH FORM FIELD */
@@ -274,11 +361,11 @@ header {
 .email-container::after,
 .message-container::after {
     content: '';
-    position: absolute; /* position relative to container */
+    position: absolute;
     bottom: -1px;
     left: 50%;
-    transform: translateX(-50%); /* adjust position to align perfectly */
-    width: 100%; /* line takes up full width of container */
+    transform: translateX(-50%);
+    width: 100%;
     height: 1px;
     background-color: #071629;
     opacity: 0.1745;
@@ -307,6 +394,56 @@ header {
     width: 162px;
     height: 44px;
     text-align: center;
-    margin-bottom: 130px;
 }
 /* FOOTER STYLES (TASK 5) */
+
+.footer-cont {
+    background-color: #071629;
+    width: 100%;
+    height: 249px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.footer-important {
+    position: relative;
+    top: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50%;
+    align-items: center;
+}
+
+.footer-logo {
+    background-image: url(./images/logo_headphones.png);
+    background-size: cover;
+    width: 162px;
+    height: 32px;
+    margin-bottom: 45px;
+}
+
+.social-cont {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.social {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.copyright {
+    position: relative;
+    margin-top: 45px;
+    font-family: 'Source Sans Pro';
+    font-size: 12px;
+    color: #FFFFFF;
+    opacity: 35.17%;
+    text-align: center;
+}
