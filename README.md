@@ -32,7 +32,7 @@ The objective is simple: Have a fully functional web page that looks the same as
 
 **How to access the application locally**
 
-(file://wsl.localhost/Ubuntu/home/jaylen/atlas-headphones/index.html)
+(https://jaylenperez.github.io/atlas-headphones/)
 
 ## :sparkles: <span id="authors">Authors</span>
 
