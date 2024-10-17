@@ -22,17 +22,17 @@ In this project, you will implement from scratch, without any library, a web pag
 You won’t have a lot of instruction, you are free to implement it the way that you want.
 ## :school: <span id="learning objective">Learning Objective</span>
 
-the objective is simple: Have a fully functional web page that looks the same as the designer file.
+The objective is simple: Have a fully functional web page that looks the same as the designer file.
 ## :floppy_disk: <span id="requirements">Requirements</span>
 
-* you are not allowed to import external CSS framework (like Bootstrap)
-* you are not to use Javascript
+* You are not allowed to import external CSS framework (like Bootstrap)
+* You are not to use Javascript
 
 ## :wrench: <span id="installation">Installation</span>
 
 **How to access the application locally**
 
-(https://jaylenperez.github.io/REPO/FOLDER/FILE.html)
+(file://wsl.localhost/Ubuntu/home/jaylen/atlas-headphones/index.html)
 
 ## :sparkles: <span id="authors">Authors</span>
 
