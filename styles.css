@@ -58,6 +58,17 @@ header {
     height: auto;
 }
 
+/* HAMBURGER MENU MOBILE */
+#hamburger {
+    display: none;
+    position: absolute;
+}
+
+#burger {
+    display: none;
+    position: absolute;
+}
+
 /* NAV MENU CONTAINER */
 .nav-container {
     display: flex;
@@ -145,6 +156,90 @@ header {
 .header-bottom button:hover,
 .header-bottom button:active {
     opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+    header {background-position: 42% 50%;}
+}
+
+@media (max-width: 480px) {
+    header {background-position: 44% 50%;}
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 1rem auto;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    #burger {
+        background: #FFF;
+        width: 0.8rem;
+        height: 0.125rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.125rem;
+        display: block;
+    }
+
+    #burger::before {
+        content: "";
+        background: #FFF;
+        width: 1.25rem;
+        height: 0.125rem;
+        position: relative;
+        top: -0.4rem;
+        display: block;
+    }
+
+    #burger::after {
+        content: "";
+        background: #FFF;
+        width: 1.125rem;
+        height: 1.125rem;
+        position: relative;
+        top: 0.3rem;
+        display: block;
+    }
+
+    #hamburger:checked ~ .nav-menu {
+        display: inline-flex;
+    }
+
+    #hamburger:checked ~ #burger {
+        background: transparent;
+    }
+
+    #hamburger:checked ~ #burger::before {
+        transform: rotate(45deg);
+        top: 0.2rem;
+        margin: auto;
+    }
+
+    #hamburger:checked ~ #burger::after {
+        width: 1.25rem;
+        transform: rotate(-45deg);
+        top: 0.06rem;
+        margin: auto;
+    }
+
+    .header-text {
+        width: 100%;
+        margin: 14rem auto 0 auto;
+    }
 }
 
 /* HEADER DESCRIPTION */
