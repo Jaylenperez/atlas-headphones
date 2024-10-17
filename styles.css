@@ -48,8 +48,10 @@ header {
 
 /* LOGO */
 .logo {
-    width: 10rem;
-    height: auto;
+    background-image: url(./images/logo_headphones.png);
+    background-size: cover;
+    width: 161px;
+    height: 32px;
 }
 
 /* HAMBURGER MENU MOBILE */
@@ -182,33 +184,27 @@ header {
     }
 
     #burger {
-        background: #FFF;
-        width: 0.8rem;
-        height: 0.125rem;
         position: absolute;
-        left: 1rem;
-        top: 1.125rem;
-        display: block;
+        align-self: flex-start;
+        display: flex;
+        font-size: 20px;
+        top: 8px;
     }
 
     #burger::before {
-        content: "";
-        background: #FFF;
-        width: 1.25rem;
-        height: 0.125rem;
-        position: relative;
-        top: -0.4rem;
-        display: block;
+        font-family: 'holberton_school-icon';
+        content: "\e911";
+        position:  absolute;
+        display: flex;
+        color: #FFFFFF;
     }
 
     #burger::after {
-        content: "";
-        background: #FFF;
-        width: 1.125rem;
-        height: 1.125rem;
-        position: relative;
-        top: 0.3rem;
-        display: block;
+        font-family: 'Source Sans Pro';
+        content: "X";
+        position: absolute;
+        display: flex;
+        color: transparent;
     }
 
     #hamburger:checked ~ .nav-menu {
@@ -220,16 +216,11 @@ header {
     }
 
     #hamburger:checked ~ #burger::before {
-        transform: rotate(45deg);
-        top: 0.2rem;
-        margin: auto;
+        color: transparent;
     }
 
     #hamburger:checked ~ #burger::after {
-        width: 1.25rem;
-        transform: rotate(-45deg);
-        top: 0.06rem;
-        margin: auto;
+        color: #FFFFFF;
     }
 
     .header-text {
